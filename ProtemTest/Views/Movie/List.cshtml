@@ -1,0 +1,16 @@
+﻿@model ProtemTest.Models.Movie
+@{
+    ViewBag.Title = "List";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>List</h2>
+
+<table>
+    <thead>Movies</thead>
+    @foreach (var movieName in Model.Name)
+    {
+        <tr><td>@movieName</td></tr>
+    }
+</table>
+
